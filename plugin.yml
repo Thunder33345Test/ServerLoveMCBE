@@ -1,0 +1,42 @@
+name: ServerLoveMCBE
+main: ServerLoveMCBE\Main
+version: 1.0.0
+api: [3.11.0]
+load: POSTWORLD
+author: someone
+description: Add a little romance to your server!
+commands:
+ serverlove:
+  description: Displays Plugin Infomation
+  usage: "/serverlove."
+  aliases: [sl]
+  permission: serverlovemcbe.serverlove
+ love:
+  description: Love a player
+  usage: "/love <playerName>"
+  aliases: [l]
+  permission: serverlovemcbe.love
+ breakup:
+  description: Love a player
+  usage: "/breakup <playerName>"
+  aliases: [dump]
+  permission: serverlovemcbe.breakup
+  permission: serverlovemcbe.breakup
+ nolove:
+  description: Toggle if you want to / dont want to love.
+  usage: "/nolove <nolove | love>"
+  aliases: [nl]
+  permission: serverlovemcbe.nolove
+permissions:
+ serverlovemcbe.serverlove:
+  description: "Displays Plugin Infomation"
+  default: true
+ serverlovemcbe.love:
+  description: "Allows the user to love another player"
+  default: true
+ serverlovemcbe.breakup:
+  description: "Allows the user to breakup with another player"
+  default: true
+ serverlovemcbe.nolove:
+  description: "Allows the user to be / not to be loved."
+  default: true
